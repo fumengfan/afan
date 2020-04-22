@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_margin="80dp"
+    tools:context=".preventActivity">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="是否开启防盗"/>
+
+        <Switch
+            android:id="@+id/anti_theft_turn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true" />
+    </RelativeLayout>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:text="提醒：开启防盗需要获取系统联系人信息，以及访问数据存储，且只有开启防盗才能进行下一步操作"
+        />
+    <Button
+        android:id="@+id/turn_on_prevent"
+        android:layout_marginTop="150dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="我是通知者，点我进入防盗功能"
+        />
+    <Button
+        android:id="@+id/update_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="更改密码"
+        />
+        <ImageView
+            android:id="@+id/prevent_next"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_marginTop="90dp"
+            android:background="@drawable/a_right"/>
+
+</LinearLayout>

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    tools:context=".functionActivity">
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+   android:paddingTop="20dp"
+    android:layout_marginBottom="50dp"
+    android:text="对防盗手机进行操作"
+    />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:layout_margin="30dp"
+        android:padding="10dp"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/lock"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#ADD8E6"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            android:text="一键锁屏"/>
+        <Button
+            android:id="@+id/uninstall"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:background="#ADD8E6"
+            android:layout_weight="1"
+            android:text="一键卸载"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:layout_margin="30dp"
+        android:padding="10dp"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/clear_data"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#ADD8E6"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            android:text="清除数据"/>
+        <Button
+            android:id="@+id/location"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:background="#ADD8E6"
+            android:layout_weight="1"
+            android:text="手机定位"/>
+    </LinearLayout>
+
+        <ImageView
+            android:layout_marginTop="90dp"
+            android:id="@+id/go_back_function"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/left"
+            />
+
+</LinearLayout>

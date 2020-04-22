@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.phonesecurity">
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/safe"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".ForgetPwActivity"></activity>
+        <activity android:name=".locateActivity" />
+        <activity android:name=".functionActivity" />
+        <activity android:name=".startActivity" />
+        <activity android:name=".preventNumActivity" />
+        <activity android:name=".securityNumActivity" />
+        <activity android:name=".preventActivity" />
+        <activity android:name=".updatePwActivity" />
+        <activity android:name=".registerActivity" />
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
